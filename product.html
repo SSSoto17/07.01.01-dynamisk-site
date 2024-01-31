@@ -24,7 +24,6 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="category.html">Categories</a></li>
                 <li><a href="productlisting.html">Browse</a></li>
-                <li><a href="product.html">Product</a></li>
             </ul>
         </nav>
     </header>
@@ -35,16 +34,24 @@
                 <div class="item_overview">
                     <h1>Sahara Team India Fanwear Round Neck Jersey</h1>
                     <h2>Nike</h2>
-                    <h3 class="price">895,00 DKK</h3>
-                    <ul>
-                        <li>Size:</li>
-                        <li>Color:</li>
+                    <div class="price">
+                        <!-- If discounted, add class "discount" to top h3 tag -->
+                        <h3 class="price">895,00 DKK</h3>
+                        <!-- If not discounted, add class "not_discounted" -->
+                        <h3 class="price not_discounted">716,00 DKK</h3>
+                        <p class="discount_percentage not_discounted">20%</p>
+                    </div>
+                    <ul class="item_options">
+                        <li><span>Size:</span> Onesize</li>
+                        <li><span>Color:</span> Blue</li>
                     </ul>
                     <div class="actions">
-                        <button class="btn buy">Add to Basket</button>
-                        <button class="btn save" aria-label="Save for Later"><i
-                                class="fa-regular fa-heart"></i></button>
+                        <!-- If out of stock, add class "sold_out" from button tag -->
+                        <button class="buy">Add to Basket</button>
+                        <button class="save" aria-label="Save for Later"><i class="fa-regular fa-heart"></i></button>
                     </div>
+                    <!-- If in stock, add class "in_stock" to p tag -->
+                    <p class="sold_out in_stock"><span class="fa-thin fa-x"></span> Out of Stock</p>
                 </div>
                 <div class="item_description">
                     <h3>Cheer for the Indian cricket team on and off the fields in this blue polo neck jersey from Nike.
