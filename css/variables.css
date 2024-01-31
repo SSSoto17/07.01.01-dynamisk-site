@@ -1,0 +1,13 @@
+* {
+  /* FONTS */
+  --display-font: "Roboto Slab", serif;
+  --title-font: "Antic", sans-serif;
+  --body-font: "Pridi", serif;
+
+  /* COLOUR PALETTE */
+  --primary-color: #78290f;
+  --secondary-color: #ff7d00;
+  --accent-color: #15616d;
+  --main-bg-color: #ffecd1;
+  --main-color: #001524;
+}

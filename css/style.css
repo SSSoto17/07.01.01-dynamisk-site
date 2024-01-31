@@ -1,0 +1,115 @@
+/* TEXT */
+
+h1 {
+  font-family: var(--display-font);
+  color: var(--main-color);
+}
+
+h2,
+h3 {
+  font-family: var(--title-font);
+  color: var(--main-color);
+  margin-bottom: 0.5rem;
+}
+
+h3.price {
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+p {
+  color: var(--main-color);
+  font-family: var(--body-font);
+  font-weight: lighter;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* NAVIGATION */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 75px;
+  padding: 0.5rem 2rem;
+  background-color: var(--main-color);
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+nav li,
+nav a {
+  font-family: var(--title-font);
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+
+.logo {
+  font-family: var(--display-font);
+  font-size: 3rem;
+  color: white;
+}
+
+/* MAIN */
+
+.container {
+  max-width: 1300px;
+  margin: auto;
+  background-color: white;
+}
+
+.grid_1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+/* PRODUCT */
+
+.item_info {
+  order: 1;
+  padding: 5rem 1rem;
+}
+
+.item_info .actions {
+  display: flex;
+  gap: 2rem;
+  padding: 1rem 0;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+button.buy {
+  background-color: var(--accent-color);
+  width: 350px;
+  padding: 1rem 2rem;
+  color: white;
+  font-family: var(--title-font);
+  font-size: 1.15rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+button.buy:hover {
+  opacity: 0.8;
+}
+
+button.save {
+  color: var(--secondary-color);
+  font-size: 2.5rem;
+}
+
+button.save:hover {
+  color: var(--primary-color);
+}
