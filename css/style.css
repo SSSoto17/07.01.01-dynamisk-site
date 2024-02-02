@@ -67,24 +67,25 @@ nav a {
   max-width: 1300px;
   margin: auto;
   background-color: white;
-  padding: 1rem 0;
+  padding: 1rem;
 }
 
 .container img {
+  max-width: 500px;
   max-height: 80vh;
   object-fit: cover;
 }
 
-.grid_1-1 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-}
-
 .grid_1-1-1-1 {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.5rem 1rem;
+}
+
+.grid_1-1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 1rem;
 }
 
 /* CATEGORIES */
@@ -144,6 +145,7 @@ nav a {
 .product_card .actions {
   display: flex;
   gap: 0.5rem;
+  justify-content: center;
 }
 
 .item_info {
@@ -215,7 +217,7 @@ button {
 button.buy {
   background-color: var(--accent-color);
   width: 100%;
-  max-width: 350px;
+  max-width: 500px;
   padding: 1rem 2rem;
   color: white;
   font-family: var(--title-font);
