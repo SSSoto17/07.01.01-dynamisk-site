@@ -27,6 +27,7 @@ function showProduct(product) {
 
   if (product.soldout) {
     cardClone.querySelector("button.buy").classList.add("sold_out");
+    cardClone.querySelector("button.buy").textContent = "Out of Stock";
   }
 
   const listContainer = document.querySelector(".container");
