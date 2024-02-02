@@ -1,3 +1,6 @@
+const urlParams = new URLSearchParams(window.location.search);
+const id = urlParams.get("id");
+
 const url = "https://kea-alt-del.dk/t7/api/products?limit=20";
 
 fetch(url)
@@ -29,6 +32,8 @@ function showProduct(product) {
     cardClone.querySelector("button.buy").classList.add("sold_out");
     cardClone.querySelector("button.buy").textContent = "Out of Stock";
   }
+
+  cardClone.querySelector("a").href = "product.html?id=" + product.id;
 
   const listContainer = document.querySelector(".container");
   listContainer.appendChild(cardClone);

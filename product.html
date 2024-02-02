@@ -28,42 +28,51 @@
         </nav>
     </header>
     <main>
-        <div class="container grid_1-1">
-            <img src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp" alt="Product">
-            <div class="item_info">
-                <div class="item_overview">
-                    <h1>Sahara Team India Fanwear Round Neck Jersey</h1>
-                    <h2>Nike</h2>
-                    <div class="price">
-                        <!-- If discounted, add class "discount" to top h3 tag -->
-                        <h3 class="price">895,00 DKK</h3>
-                        <!-- If not discounted, add class "not_discounted" -->
-                        <h3 class="price not_discounted">716,00 DKK</h3>
-                        <p class="discount_percentage not_discounted">20%</p>
-                    </div>
-                    <ul class="item_options">
-                        <li><span>Size:</span> Onesize</li>
-                        <li><span>Color:</span> Blue</li>
-                    </ul>
-                    <div class="actions">
-                        <!-- If out of stock, add class "sold_out" from button tag -->
-                        <button class="buy">Add to Basket</button>
-                        <button class="save" aria-label="Save for Later"><i class="fa-regular fa-heart"></i></button>
-                    </div>
-                    <!-- If in stock, add class "in_stock" to p tag -->
-                    <p class="sold_out in_stock"><span class="fa-thin fa-x"></span> Out of Stock</p>
+        <div class="container grid_1-1"></div>
+    </main>
+    <template>
+        <img src="" alt="">
+        <div class="item_info">
+            <div class="item_overview">
+                <h1>Product Title</h1>
+                <h2>Brand</h2>
+                <div class="price_display">
+                    <!-- If not discounted, add class "hide" -->
+                    <h3 class="before_discount"><span></span> DKK</h3>
+                    <h3 class="price"><span></span> DKK</h3>
+                    <!-- If not discounted, add class "not_discounted" -->
+                    <p class="discount_percentage"><span></span>%</p>
                 </div>
-                <div class="item_description">
-                    <h3>Cheer for the Indian cricket team on and off the fields in this blue polo neck jersey from Nike.
-                    </h3>
-                    <p>Blue round neck Sahara Team India jersey, has short sleeves, print on the chest and back
-                        chest<br>Warranty for manufacturing defects: 6 months (not valid on products with more than 20%
-                        discount)<br></p>
-                    <p>100% polyester<br>Machine wash</p>
+                <ul class="item_options">
+                    <li>
+                        <form action="" class="size">
+                            <label for="size">Size: </label>
+                            <select name="size" id="size">
+                                <option value="xs">X-Small</option>
+                                <option value="s">Small</option>
+                                <option value="m">Medium</option>
+                                <option value="l">Large</option>
+                                <option value="xl">X-Large</option>
+                            </select>
+                        </form>
+                    </li>
+                    <li>Color: <span class="color"></span></li>
+                </ul>
+                <div class="actions">
+                    <!-- If out of stock, add class "sold_out" -->
+                    <button class="buy">Add to Basket</button>
+                    <button class="save" aria-label="Save for Later"><i class="fa-regular fa-heart"></i></button>
                 </div>
             </div>
+            <div class="item_description">
+                <h3>Style header</h3>
+                <p class="desc">Product description</p>
+                <p class="care_desc">Care information</p>
+            </div>
         </div>
-    </main>
+    </template>
+
+    <script src="js/product.js"></script>
 </body>
 
 </html>

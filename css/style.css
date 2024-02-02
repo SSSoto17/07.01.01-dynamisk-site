@@ -204,8 +204,26 @@ p.not_discounted {
   font-family: var(--body-font);
 }
 
-.item_options span {
+.item_options li {
   font-weight: bold;
+}
+
+.item_options .size {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+#size {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: none;
+  color: var(--main-color);
+}
+
+.item_options span {
+  font-weight: lighter;
 }
 
 button {
@@ -228,10 +246,6 @@ button.buy {
 
 button.buy:hover {
   opacity: 0.8;
-}
-
-p.in_stock {
-  display: none;
 }
 
 button.sold_out {
