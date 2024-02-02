@@ -128,9 +128,17 @@ nav a {
 /* PRODUCT */
 
 .product_card {
-  border: var(--accent-color) solid 1px;
+  border: lightgray solid 1px;
   padding: 1rem;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+  position: relative;
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+
+.product_card a {
+  display: block;
+  height: 100%;
 }
 
 .product_card .actions {
@@ -147,7 +155,7 @@ nav a {
   padding: 1rem 0;
 }
 
-.price {
+.price_display {
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -161,6 +169,15 @@ h3.price {
 h3.discount {
   font-weight: lighter;
   text-decoration: line-through;
+}
+
+h3.before_discount {
+  font-weight: lighter;
+  text-decoration: line-through;
+}
+
+.hide {
+  display: none;
 }
 
 p.discount_percentage {
