@@ -33,17 +33,13 @@ function showProduct(product) {
     cardClone.querySelector("button.buy").textContent = "Out of Stock";
   }
 
+  cardClone.querySelector("button.save i").addEventListener("click", function () {
+    this.classList.toggle("fa-regular");
+    this.classList.toggle("fa-solid");
+  });
+
   cardClone.querySelector("a").href = "product.html?id=" + product.id;
 
   const listContainer = document.querySelector(".container");
   listContainer.appendChild(cardClone);
-
-  const saveHeart = document.querySelectorAll("button.save i");
-
-  saveHeart.forEach(function (elem) {
-    elem.addEventListener("click", function () {
-      this.classList.toggle("fa-regular");
-      this.classList.toggle("fa-solid");
-    });
-  });
 }
