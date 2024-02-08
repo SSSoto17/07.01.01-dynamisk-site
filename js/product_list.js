@@ -8,7 +8,7 @@ if (seasonURL) {
 } else if (categoryURL) {
   myParam = "category=" + categoryURL;
 }
-const url = "https://kea-alt-del.dk/t7/api/products?" + myParam;
+const url = "https://kea-alt-del.dk/t7/api/products?limit=20&" + myParam;
 console.log(url);
 fetch(url)
   .then((response) => response.json())
